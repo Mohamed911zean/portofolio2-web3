@@ -240,3 +240,78 @@ ul {
 .example-2 .icon-content a[data-social="youtube"]~.tooltip {
     background-color: #ff0000;
 }
+#hire_me {
+    color: #b74b4b;
+    border: solid 1px;
+    padding: 1rem 2.8rem;
+    border-radius: 3rem;
+    border-color: #b74b4b;
+    position: absolute;
+    top: 800px;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.typing_text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing_text span {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.typing_text span::before {
+    content: "Software Developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+.typing_text span::after {
+    content: "";
+    background-color: black;
+    width: calc(100%+8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8px;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words {
+	0% {
+		content: "Web Developer";
+	}
+	20% {
+		content: "Web Designer";
+	}
+	40% {
+		content: "Youtuber";
+	}
+	60% {
+		content: "Script Writer";
+	}
+	80% {
+		content: "Software Developer";
+	}
+	100% {
+		content: "Web Developer";
+	}
+}
+
+
+#hire_me:hover {
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
